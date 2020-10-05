@@ -27,6 +27,14 @@ function pageScroll(){
 }
 // 回到顶部
 function scrollToTop(){
+$(window).scroll(function() {
+
+    // calculate the percentage the user has scrolled down the page
+    var scrollPercent = ($(window).scrollTop() / ($(document).height() - 702)) * 100;
+
+    console.log(scrollPercent);
+
+});
 	$("#totop-toggle").on("click", function(e){
 		$("html").animate({scrollTop:0},200);
 	});
