@@ -33,7 +33,6 @@ $(window).scroll(function() {
     var scrollPercent = ($(window).scrollTop() / ($(document).height() - $(window).height())) * 100;
     //console.log(scrollPercent);
     //console.log(parseInt(scrollPercent));
-
     document.getElementById("totop-toggle").innerHTML = parseInt(scrollPercent) + "%"
 });
 	$("#totop-toggle").on("click", function(e){
