@@ -30,11 +30,11 @@ function scrollToTop(){
 $(window).scroll(function() {
 
     // calculate the percentage the user has scrolled down the page
-    var scrollPercent = ($(window).scrollTop() / ($(document).height() - 702)) * 100;
+    var scrollPercent = ($(window).scrollTop() / ($(document).height() - 701)) * 100;
 
     console.log(parseInt(scrollPercent));
 
-    document.getElementById("totop-toggle").innerHTML = parseInt(scrollPercent)
+    document.getElementById("totop-toggle").innerHTML = parseInt(scrollPercent) + "%"
 });
 	$("#totop-toggle").on("click", function(e){
 		$("html").animate({scrollTop:0},200);
